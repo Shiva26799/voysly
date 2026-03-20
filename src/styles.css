@@ -835,6 +835,14 @@
       color: #fff;
     }
 
+    .interview-card.playing .play-icon {
+      display: none !important;
+    }
+
+    .interview-card.playing .pause-icon {
+      display: block !important;
+    }
+
     .ic-score {
       display: inline-flex;
       padding: 4px 10px;

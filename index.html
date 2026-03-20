@@ -139,8 +139,12 @@
             <div><span class="ic-score high">88/100</span></div>
             <div class="ic-duration">3:58</div>
             <button class="ic-play" onclick="event.stopPropagation(); togglePlay(0)">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="8,5 19,12 8,19" />
+              </svg>
+              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                <rect x="6" y="4" width="4" height="16" />
+                <rect x="14" y="4" width="4" height="16" />
               </svg>
             </button>
           </div>
@@ -153,8 +157,12 @@
             <div><span class="ic-score high">92/100</span></div>
             <div class="ic-duration">5:42</div>
             <button class="ic-play" onclick="event.stopPropagation(); togglePlay(1)">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="8,5 19,12 8,19" />
+              </svg>
+              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                <rect x="6" y="4" width="4" height="16" />
+                <rect x="14" y="4" width="4" height="16" />
               </svg>
             </button>
           </div>
@@ -167,8 +175,12 @@
             <div><span class="ic-score mid">71/100</span></div>
             <div class="ic-duration">3:45</div>
             <button class="ic-play" onclick="event.stopPropagation(); togglePlay(2)">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="8,5 19,12 8,19" />
+              </svg>
+              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                <rect x="6" y="4" width="4" height="16" />
+                <rect x="14" y="4" width="4" height="16" />
               </svg>
             </button>
           </div>
@@ -1267,6 +1279,9 @@
     function togglePlay(index) {
       const cards = document.querySelectorAll('.interview-card');
       const card = cards[index];
+
+      // Sync active state (blue border) with play state
+      activateCard(card);
 
       // Audio Source Mapping (index 0 is our Barista)
       const sources = ['barista.mp3', 'interpreter.mp3', 'warehouse.mp3'];
