@@ -142,7 +142,8 @@
               <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="8,5 19,12 8,19" />
               </svg>
-              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
+                style="display:none;">
                 <rect x="6" y="4" width="4" height="16" />
                 <rect x="14" y="4" width="4" height="16" />
               </svg>
@@ -160,7 +161,8 @@
               <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="8,5 19,12 8,19" />
               </svg>
-              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
+                style="display:none;">
                 <rect x="6" y="4" width="4" height="16" />
                 <rect x="14" y="4" width="4" height="16" />
               </svg>
@@ -178,7 +180,8 @@
               <svg class="play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="8,5 19,12 8,19" />
               </svg>
-              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+              <svg class="pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
+                style="display:none;">
                 <rect x="6" y="4" width="4" height="16" />
                 <rect x="14" y="4" width="4" height="16" />
               </svg>
@@ -1291,7 +1294,7 @@
       if (playingIndex !== -1 && playingIndex !== index) {
         const prevCard = cards[playingIndex];
         prevCard.classList.remove('playing');
-        
+
         // NEW: Restore original duration if hidden in a data attribute
         const prevDuration = prevCard.querySelector('.ic-duration');
         if (prevDuration.hasAttribute('data-original')) {
@@ -1310,7 +1313,7 @@
         // Pause current
         card.classList.remove('playing');
         if (currentAudio) currentAudio.pause();
-        
+
         // NEW: Optional - keep countdown where it is, or reset? 
         // Let's keep it paused at the current value.
       } else {
@@ -1333,7 +1336,7 @@
           // Sync Wave Bars with Audio Progress + Countdown
           currentAudio.addEventListener('timeupdate', () => {
             if (!currentAudio.duration) return;
-            
+
             const durationEl = card.querySelector('.ic-duration');
             // Store original duration once
             if (!durationEl.hasAttribute('data-original')) {
