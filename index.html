@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOYSLY — AI Voice Interviews That Hire Smarter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo"><img src="Voysly logo-02.png" alt="Voysly logo"
+          style="height:42px; width:auto; display:block; transform: scale(1.50);"></a>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#workflow">How it works</a></li>
+        <li><a href="#e2e">End-to-end</a></li>
+        <li><a href="#jobs">For Job Seekers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-secondary" style="font-size:13px; padding:9px 20px;">Sign In</a>
+        <a href="#" class="btn btn-primary" style="font-size:13px; padding:9px 20px;">Start Free Trial →</a>
+      </div>
+      <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="aurora-layer"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge reveal"><span class="dot"></span> AI Voice Interviews — Now Live</div>
+        <h1 class="reveal stagger-1">Interview Every<br>Candidate with<br><span class="accent">AI Precision</span></h1>
+        <p class="hero-desc reveal stagger-2">VOYSLY conducts intelligent voice interviews 24/7, screens thousands of
+          applicants in minutes, so your team focuses on people, not process.</p>
+        <div class="hero-ctas reveal stagger-3">
+          <a href="#" class="btn btn-primary">Book a demo <svg width="16" height="16" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12l5-5-5-5" />
+            </svg></a>
+        </div>
+        <div class="hero-stats reveal stagger-4">
+          <div class="hero-stat">
+            <div class="hero-stat-num">4.8/5</div>
+            <div class="hero-stat-label">User Rating</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">86%</div>
+            <div class="hero-stat-label">Faster Screening</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">10x</div>
+            <div class="hero-stat-label">Faster Interviews</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-video-wrap reveal-scale stagger-2" onclick="playHeroVideo()">
+        <video id="heroVideo" src="VOYSLY Ad video Draft_02 (1).mp4" poster="thumbnail.png" playsinline
+          style="width:100%; height:100%; object-fit:cover; display:none;"></video>
+        <div class="video-placeholder" id="videoPlaceholder">
+          <div class="video-play-btn">
+            <svg viewBox="0 0 24 24">
+              <polygon points="8,5 19,12 8,19" />
+            </svg>
+          </div>
+          <div class="video-label"> </div>
+          <div class="sound-waves">
+            <div class="sound-wave-bar"></div>
+            <div class="sound-wave-bar"></div>
+            <div class="sound-wave-bar"></div>
+            <div class="sound-wave-bar"></div>
+            <div class="sound-wave-bar"></div>
+            <div class="sound-wave-bar"></div>
+            <div class="sound-wave-bar"></div>
+            <div class="sound-wave-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO BAR -->
+  <section class="logo-bar">
+    <div class="logo-bar-label"></div>
+    <div class="logo-track-wrapper">
+      <div class="logo-track" id="logoTrack">
+        <div class="logo-item"><img src="One2One.jpg.jpeg" alt="One2One logo"></div>
+        <div class="logo-item"><img src="refactorq.png" alt="RefactorQ logo"></div>
+        <div class="logo-item"><img src="biggbycoffe.png" alt="Biggby Coffe logo"></div>
+        <div class="logo-item"><img src="7c-lingo.png" alt="7C Lingo logo"></div>
+        <div class="logo-item"><img src="lion.jpg" alt="Lion logo"></div>
+        <!-- duplicated for seamless scroll -->
+        <div class="logo-item"><img src="One2One.jpg.jpeg" alt="One2One logo"></div>
+        <div class="logo-item"><img src="refactorq.png" alt="RefactorQ logo"></div>
+        <div class="logo-item"><img src="biggbycoffe.png" alt="Biggby Coffe logo"></div>
+        <div class="logo-item"><img src="7c-lingo.png" alt="7C Lingo logo"></div>
+        <div class="logo-item"><img src="lion.jpg" alt="Lion logo"></div>
+        <!-- triplicated for wider screens -->
+        <div class="logo-item"><img src="One2One.jpg.jpeg" alt="One2One logo"></div>
+        <div class="logo-item"><img src="refactorq.png" alt="RefactorQ logo"></div>
+        <div class="logo-item"><img src="biggbycoffe.png" alt="Biggby Coffe logo"></div>
+        <div class="logo-item"><img src="7c-lingo.png" alt="7C Lingo logo"></div>
+        <div class="logo-item"><img src="lion.jpg" alt="Lion logo"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="experience-header">
+        <div class="section-label reveal">Live Experience</div>
+        <h2 class="section-title reveal stagger-1">Hear Voicely in Action</h2>
+        <p class="section-sub reveal stagger-2">Listen to actual candidates being interviewed by VOYSLY and see how our
+          AI analyzes communication, technical knowledge, and cultural fit in real-time.</p>
+      </div>
+      <div class="interview-player-grid">
+        <div class="interview-card reveal stagger-1 active" data-index="0" onclick="activateCard(this)">
+          <div class="ic-role">Barista</div>
+          <div class="ic-company">BIGGBY COFFEE • Espresso, Service</div>
+          <div class="ic-waveform" id="wave0"></div>
+          <div class="ic-bottom">
+            <div><span class="ic-score high">88/100</span></div>
+            <div class="ic-duration">3:58</div>
+            <button class="ic-play" onclick="event.stopPropagation(); togglePlay(0)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="8,5 19,12 8,19" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="interview-card reveal stagger-2" data-index="1" onclick="activateCard(this)">
+          <div class="ic-role">Interpreter</div>
+          <div class="ic-company">7clingo • Language Services</div>
+          <div class="ic-waveform" id="wave1"></div>
+          <div class="ic-bottom">
+            <div><span class="ic-score high">92/100</span></div>
+            <div class="ic-duration">5:42</div>
+            <button class="ic-play" onclick="event.stopPropagation(); togglePlay(1)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="8,5 19,12 8,19" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="interview-card reveal stagger-3" data-index="2" onclick="activateCard(this)">
+          <div class="ic-role">Warehouse Associate</div>
+          <div class="ic-company">SwiftPack • Logistics</div>
+          <div class="ic-waveform" id="wave2"></div>
+          <div class="ic-bottom">
+            <div><span class="ic-score mid">71/100</span></div>
+            <div class="ic-duration">3:45</div>
+            <button class="ic-play" onclick="event.stopPropagation(); togglePlay(2)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="8,5 19,12 8,19" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INLINE CTA -->
+  <div class="cta-banner reveal">
+    <h3>Up and running in minutes</h3>
+    <p>No complex setup. No long onboarding. Just paste your JD and watch Voysly go.</p>
+    <a href="#" class="btn btn-primary">Start Free Trial →</a>
+  </div>
+
+  <!-- BENEFITS -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div style="text-align:center;">
+        <div class="section-label reveal">Why VOYSLY</div>
+        <h2 class="section-title reveal stagger-1">Hiring Intelligence,<br><em
+            style="color:var(--accent)">Reimagined</em></h2>
+        <p class="section-sub reveal stagger-2" style="margin:0 auto;">Every interview is an opportunity. VOYSLY ensures
+          none are missed, none are biased, and every candidate gets a fair, consistent experience.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal stagger-1">
+          <div class="benefit-icon">⚡</div>
+          <h4>Smarter Analytics</h4>
+          <p>AI-generated summaries with transcript, tone analysis, confidence scoring, and skill-match heatmaps
+            delivered to your ATS.</p>
+          <div class="benefit-metric">10x</div>
+        </div>
+        <div class="benefit-card reveal stagger-2">
+          <div class="benefit-icon">🎯</div>
+          <h4>Unbiased Evaluation</h4>
+          <p>AI scores based on competency, not credentials. Every candidate gets a fair shot.</p>
+          <div class="benefit-metric">0% Bias</div>
+        </div>
+        <div class="benefit-card reveal stagger-3">
+          <div class="benefit-icon">🌙</div>
+          <h4>24/7 Availability</h4>
+          <p>Candidates interview on their schedule — mornings, nights, weekends. Always on.</p>
+          <div class="benefit-metric">24/7</div>
+        </div>
+        <div class="benefit-card reveal stagger-4">
+          <div class="benefit-icon">💰</div>
+          <h4>78% Cost Reduction</h4>
+          <p>Eliminate scheduling overhead, reduce recruiter hours, and cut cost-per-hire dramatically.</p>
+          <div class="benefit-metric">78%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="workflow" id="workflow">
+    <div class="container">
+      <div class="workflow-header">
+        <div class="section-label reveal">How It Works</div>
+        <h2 class="section-title reveal stagger-1">Four Steps to<br><em style="color:var(--accent)">Better Hires</em>
+        </h2>
+        <p class="section-sub reveal stagger-2">From job post to offer letter — VOYSLY automates the entire screening
+          pipeline.</p>
+      </div>
+      <div class="workflow-steps" id="workflowSteps">
+        <div class="workflow-step active" data-step="1">
+          <div class="ws-number">1</div>
+          <div class="ws-content">
+            <h3>Configure Your Interview</h3>
+            <p>Paste a job description or select from templates. VOYSLY auto-generates role-specific questions
+              calibrated to your requirements.</p>
+          </div>
+          <div class="ws-visual">
+            <div class="ws-visual-inner">
+              <div class="ws-visual-icon"><img src="job-setup.png" alt="Job Setup"></div>
+            </div>
+          </div>
+        </div>
+        <div class="workflow-step" data-step="2">
+          <div class="ws-number">2</div>
+          <div class="ws-content">
+            <h3>Invite Candidates</h3>
+            <p>Share a unique interview link via SMS, email, or your ATS. Candidates start immediately — no scheduling
+              needed.</p>
+          </div>
+          <div class="ws-visual">
+            <div class="ws-visual-inner">
+              <div class="ws-visual-icon"><img src="auto-invite.png" alt="Auto-Invite"></div>
+            </div>
+          </div>
+        </div>
+        <div class="workflow-step" data-step="3">
+          <div class="ws-number">3</div>
+          <div class="ws-content">
+            <h3>AI Conducts Interviews</h3>
+            <p>VOYSLY's voice AI adapts in real-time — asking follow-ups, probing deeper, and scoring answers
+              objectively.</p>
+          </div>
+          <div class="ws-visual">
+            <div class="ws-visual-inner">
+              <div class="ws-visual-icon"><img src="ai-interview.jpg" alt="AI Interview"></div>
+            </div>
+          </div>
+        </div>
+        <div class="workflow-step" data-step="4">
+          <div class="ws-number">4</div>
+          <div class="ws-content">
+            <h3>Review & Hire</h3>
+            <p>Get a ranked shortlist with transcripts, scores, and AI insights. Advance top talent directly to your
+              team.</p>
+          </div>
+          <div class="ws-visual">
+            <div class="ws-visual-inner">
+              <div class="ws-visual-icon"><img src="shortlist.png" alt="Shortlist"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- END-TO-END HIRING (DARK) -->
+  <section class="e2e" id="e2e">
+    <div class="container">
+      <div class="e2e-inner">
+        <div class="reveal-left">
+          <div class="section-label">End-to-End Hiring</div>
+          <h2 class="section-title">Extended Hiring<br>Managed <em style="color:#6b9aed;">Beyond AI</em></h2>
+          <p class="section-sub">VOYSLY isn't just a screening tool. It's a full-stack hiring solution , from sourcing
+            to offer, powered by AI that learns your hiring DNA.You focus on growing your business, While we look into
+            your End-to-End hiring</p>
+          <div class="e2e-features">
+            <div class="e2e-feature">
+              <div class="e2e-feat-icon">🔍</div>
+              <div class="e2e-feat-text">
+                <h4>AI-Powered Sourcing</h4>
+                <p>Multi-channel candidate outreach via SMS, email, WhatsApp, and job boards — all automated.</p>
+              </div>
+            </div>
+            <div class="e2e-feature">
+              <div class="e2e-feat-icon">📊</div>
+              <div class="e2e-feat-text">
+                <h4>Predictive Analytics</h4>
+                <p>Forecast hiring funnel outcomes, identify bottlenecks, and optimize time-to-fill in real-time.</p>
+              </div>
+            </div>
+            <div class="e2e-feature">
+              <div class="e2e-feat-icon">🤝</div>
+              <div class="e2e-feat-text">
+                <h4>Managed Hiring Service</h4>
+                <p>Let our team handle everything — from job posting to onboarding. White-glove support for your hiring
+                  needs.</p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:32px;">
+            <a href="#" class="btn btn-dark" style="border-radius:50px;">Learn More →</a>
+          </div>
+        </div>
+        <div class="e2e-visual reveal-right">
+          <div class="e2e-visual reveal-right">
+            <img src="desktop.jpeg" alt="VOYSLY dashboard" class="e2e-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-header">
+        <div class="section-label reveal">Core Features</div>
+        <h2 class="section-title reveal stagger-1">Everything You Need to<br><em style="color:var(--accent)">Hire
+            Smarter</em></h2>
+        <p class="section-sub reveal stagger-2">A comprehensive AI interviewing platform built for scale, compliance,
+          and candidate experience.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal stagger-1">
+          <div class="feature-card-icon"><svg width="22" height="22" fill="none" stroke="var(--accent)"
+              stroke-width="2">
+              <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 1 0 6 0V5a3 3 0 0 0-3-3z" />
+              <path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4M8 22h8" />
+            </svg></div>
+          <h4>Natural Voice AI</h4>
+          <p>Human-like conversations with adaptive follow-up questions, emotional intelligence, and multi-language
+            support across 40+ languages.</p>
+        </div>
+        <div class="feature-card reveal stagger-2">
+          <div class="feature-card-icon"><svg width="22" height="22" fill="none" stroke="var(--accent)"
+              stroke-width="2">
+              <rect x="2" y="3" width="18" height="18" rx="2" />
+              <path d="M8 7h8M8 11h5M8 15h8" />
+            </svg></div>
+          <h4>AI Scorecards & Reports</h4>
+          <p>Every interview generates detailed scorecards with competency ratings, red flags, cultural fit analysis,
+            and hiring recommendations.</p>
+        </div>
+        <div class="feature-card reveal stagger-1" </div>
+          <div class="feature-card-icon"><svg width="22" height="22" fill="none" stroke="var(--accent)"
+              stroke-width="2">
+              <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" />
+            </svg></div>
+          <h4>ATS Integrations</h4>
+          <p>Native integrations with Greenhouse, Lever, Workday, BambooHR, iCIMS, and 100+ other platforms via API or
+            Zapier.</p>
+        </div>
+        <div class="feature-card reveal stagger-3">
+          <div class="feature-card-icon"><svg width="22" height="22" fill="none" stroke="var(--accent)"
+              stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg></div>
+          <h4>Candidate Experience</h4>
+          <p>Warm, conversational AI that feels natural. 94% of candidates rate their VOYSLY interview as "positive" or
+            "very positive."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- JOBS -->
+  <section class="jobs" id="jobs">
+    <div class="container">
+      <div class="jobs-header">
+        <div class="section-label reveal">For Job Seekers</div>
+        <h2 class="section-title reveal stagger-1">Explore Open Roles &<br><em style="color:var(--accent)">Apply
+            Instantly</em></h2>
+        <p class="section-sub reveal stagger-2">Browse roles from companies hiring with VOYSLY. Interview on your own
+          time — no waiting.</p>
+      </div>
+      <div class="jobs-grid">
+        <div class="job-card reveal stagger-1">
+          <div class="job-info">
+            <div class="job-logo">🏥</div>
+            <div>
+              <div class="job-title">Registered Nurse — Night Shift</div>
+              <div class="job-meta">MedStar Health • Chicago, IL • Full-time</div>
+            </div>
+          </div>
+          <button class="job-apply-btn">Apply Now</button>
+        </div>
+        <div class="job-card reveal stagger-2">
+          <div class="job-info">
+            <div class="job-logo">🚚</div>
+            <div>
+              <div class="job-title">CDL-A Truck Driver</div>
+              <div class="job-meta">FleetPro Logistics • Dallas, TX • Full-time</div>
+            </div>
+          </div>
+          <button class="job-apply-btn">Apply Now</button>
+        </div>
+        <div class="job-card reveal stagger-3">
+          <div class="job-info">
+            <div class="job-logo">💻</div>
+            <div>
+              <div class="job-title">Senior Backend Engineer</div>
+              <div class="job-meta">TechNova Inc. • Remote • Full-time</div>
+            </div>
+          </div>
+          <button class="job-apply-btn">Apply Now</button>
+        </div>
+        <div class="job-card reveal stagger-4">
+          <div class="job-info">
+            <div class="job-logo">🍔</div>
+            <div>
+              <div class="job-title">Shift Manager</div>
+              <div class="job-meta">QuickBite QSR • Multiple Locations • Full-time</div>
+            </div>
+          </div>
+          <button class="job-apply-btn">Apply Now</button>
+        </div>
+      </div>
+      <div class="jobs-submit reveal">
+        <p>Apply once, interview with AI, and get matched to companies who actually want to hire you.</p>
+        <a href="#" class="btn btn-primary">Create an account →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="comparison" id="comparison">
+    <div class="container">
+      <div class="comparison-header">
+        <div class="section-label reveal">How We Compare</div>
+        <h2 class="section-title reveal stagger-1">VOYSLY vs. the Rest</h2>
+        <p class="section-sub reveal stagger-2">See why teams switch to VOYSLY for AI-powered voice interviewing.</p>
+      </div>
+      <div class="comparison-table-wrap reveal-scale">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th class="highlight">VOYSLY</th>
+              <th>Ribbon.ai</th>
+              <th>Classet.ai</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Natural Voice AI Interviews</td>
+              <td class="highlight"><span class="comp-check">&check;</span></td>
+              <td><span class="comp-check">&check;</span></td>
+              <td><span class="comp-check">&check;</span></td>
+            </tr>
+            <tr>
+              <td>Adaptive Follow-up Questions</td>
+              <td class="highlight"><span class="comp-check">&check;</span></td>
+              <td><span class="comp-partial">Limited</span></td>
+              <td><span class="comp-partial">Limited</span></td>
+            </tr>
+            <tr>
+              <td>40+ Language Support</td>
+              <td class="highlight"><span class="comp-check">&check;</span></td>
+              <td><span class="comp-cross">✗</span></td>
+              <td><span class="comp-cross">✗</span></td>
+            </tr>
+            <tr>
+              <td>End-to-End Hiring Pipeline</td>
+              <td class="highlight"><span class="comp-check">&check;</span></td>
+              <td><span class="comp-cross">✗</span></td>
+              <td><span class="comp-partial">Partial</span></td>
+            </tr>
+            <tr>
+              <td>Managed Hiring Service</td>
+              <td class="highlight"><span class="comp-check">&check;</span></td>
+              <td><span class="comp-cross">✗</span></td>
+              <td><span class="comp-cross">✗</span></td>
+            </tr>
+            <tr>
+              <td>Candidate Job Board Portal</td>
+              <td class="highlight"><span class="comp-check">&check;</span></td>
+              <td><span class="comp-cross">✗</span></td>
+              <td><span class="comp-check">&check;</span></td>
+            </tr>
+            <tr>
+              <td>ROI Dashboard & Analytics</td>
+              <td class="highlight"><span class="comp-check">&check;</span></td>
+              <td><span class="comp-partial">Basic</span></td>
+              <td><span class="comp-check">&check;</span></td>
+            </tr>
+            <tr>
+              <td>Free Trial Available</td>
+              <td class="highlight"><span class="comp-check">&check;</span></td>
+              <td><span class="comp-cross">✗</span></td>
+              <td><span class="comp-cross">✗</span></td>
+            </tr>
+            <tr>
+              <td>Starting Price</td>
+              <td class="highlight" style="font-weight:700;color:var(--accent);">$99/mo</td>
+              <td>Custom</td>
+              <td>$190/wk</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- INLINE CTA -->
+  <div class="cta-banner reveal" style="margin-top:40px;">
+    <h3>Switch to VOYSLY Today</h3>
+    <p>Join 500+ companies that made the move. Free migration support included.</p>
+    <a href="#" class="btn btn-primary">Start Free Trial →</a>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <div class="section-label reveal">Social Proof</div>
+        <h2 class="section-title reveal stagger-1">Teams That Made<br>the <em style="color:var(--accent)">Switch</em>
+        </h2>
+        <p class="section-sub reveal stagger-2">Hear from talent leaders who transformed their hiring with VOYSLY.</p>
+      </div>
+
+      <div class="testimonials-wrapper reveal-scale stagger-2">
+        <!-- COLUMN 1 -->
+        <div class="testimonials-column">
+          <div class="testimonials-track" style="--duration: 25s;">
+            <!-- CARD 1 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“I was blown away by how realistic the interactions were. Within a minute or two, I
+                completely forgot I was talking to a computer and started speaking naturally. The responses were
+                detailed and tailored specifically to what I asked.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">BJ</div>
+                <div>
+                  <div class="tc-name">Brandon Jones</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“This process felt different from other applications. It showed that the company
+                actually cared about choosing the right candidate. Even with automation, the experience felt human.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">JB</div>
+                <div>
+                  <div class="tc-name">Jeffery Barista</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“I was able to hire 4 people in one week, with 2 starting the same week. It eliminates
+                no-shows and saves time waiting for candidates.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">EG</div>
+                <div>
+                  <div class="tc-name">Emilee Gurney</div>
+                  <div class="tc-role">Store Manager</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“This system is a game changer. It’s the first thing I check when hiring. It helps me
+                quickly identify candidates who are the right fit.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">DM</div>
+                <div>
+                  <div class="tc-name">Damon</div>
+                  <div class="tc-role">Hiring Manager</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 5 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“This hiring process felt inclusive and reduced stress. It was smooth and seamless, and
+                I received my AI interview invitation within 10 minutes of applying.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">CD</div>
+                <div>
+                  <div class="tc-name">Cody</div>
+                  <div class="tc-role">Mixed Review</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DUPLICATE FOR SEAMLESS LOOP -->
+            <div class="testimonial-card">
+              <p class="tc-text">“I was blown away by how realistic the interactions were. Within a minute or two, I
+                completely forgot I was talking to a computer and started speaking naturally. The responses were
+                detailed and tailored specifically to what I asked.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">BJ</div>
+                <div>
+                  <div class="tc-name">Brandon Jones</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“This process felt different from other applications. It showed that the company
+                actually cared about choosing the right candidate. Even with automation, the experience felt human.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">JB</div>
+                <div>
+                  <div class="tc-name">Jeffery Barista</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“I was able to hire 4 people in one week, with 2 starting the same week. It eliminates
+                no-shows and saves time waiting for candidates.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">EG</div>
+                <div>
+                  <div class="tc-name">Emilee Gurney</div>
+                  <div class="tc-role">Store Manager</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“This system is a game changer. It’s the first thing I check when hiring. It helps me
+                quickly identify candidates who are the right fit.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">DM</div>
+                <div>
+                  <div class="tc-name">Damon</div>
+                  <div class="tc-role">Hiring Manager</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“This hiring process felt inclusive and reduced stress. It was smooth and seamless, and
+                I received my AI interview invitation within 10 minutes of applying.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">CD</div>
+                <div>
+                  <div class="tc-name">Cody</div>
+                  <div class="tc-role">Mixed Review</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="testimonials-column">
+          <div class="testimonials-track" style="--duration: 35s;">
+            <!-- CARD 1 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“I loved it! It was easy, simple, and convenient.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">AJ</div>
+                <div>
+                  <div class="tc-name">Alyvia Johnson</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“This was a surprisingly good experience. It was much better than an in-person
+                interview because there was less pressure, and I could be myself. The interviewer sounded like a real
+                person.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">NM</div>
+                <div>
+                  <div class="tc-name">Norah Mahmoud</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“My job has been much less stressful since using this system.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">MD</div>
+                <div>
+                  <div class="tc-name">Mahra Duncan</div>
+                  <div class="tc-role">Manager</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“I’m able to hire people based on their responses from the first interview itself.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">HT</div>
+                <div>
+                  <div class="tc-name">Hunter</div>
+                  <div class="tc-role">Manager</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DUPLICATE FOR SEAMLESS LOOP -->
+            <div class="testimonial-card">
+              <p class="tc-text">“I loved it! It was easy, simple, and convenient.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">AJ</div>
+                <div>
+                  <div class="tc-name">Alyvia Johnson</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“This was a surprisingly good experience. It was much better than an in-person
+                interview because there was less pressure, and I could be myself. The interviewer sounded like a real
+                person.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">NM</div>
+                <div>
+                  <div class="tc-name">Norah Mahmoud</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“My job has been much less stressful since using this system.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">MD</div>
+                <div>
+                  <div class="tc-name">Mahra Duncan</div>
+                  <div class="tc-role">Manager</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“I’m able to hire people based on their responses from the first interview itself.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">HT</div>
+                <div>
+                  <div class="tc-name">Hunter</div>
+                  <div class="tc-role">Manager</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="testimonials-column">
+          <div class="testimonials-track" style="--duration: 30s;">
+            <!-- CARD 1 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“Everything was very quick and smooth. The interview wasn’t stressful since it wasn’t
+                face-to-face, and it made me feel like the company truly cared.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">SK</div>
+                <div>
+                  <div class="tc-name">Shay Kessler</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“The process was quick and respected my time. There was no unnecessary waiting, and
+                everything moved efficiently.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">MB</div>
+                <div>
+                  <div class="tc-name">Madelayne Bies</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“It gives a much better perspective on hiring. Candidates who complete the interview
+                are more serious, and I don’t waste time on people who aren’t.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">XR</div>
+                <div>
+                  <div class="tc-name">Xoey Rinkavage</div>
+                  <div class="tc-role">Manager</div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="testimonial-card">
+              <p class="tc-text">“It makes it much easier to filter out people who are just applying without real
+                intent.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">SB</div>
+                <div>
+                  <div class="tc-name">Shelby</div>
+                  <div class="tc-role">Manager</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DUPLICATE FOR SEAMLESS LOOP -->
+            <div class="testimonial-card">
+              <p class="tc-text">“Everything was very quick and smooth. The interview wasn’t stressful since it wasn’t
+                face-to-face, and it made me feel like the company truly cared.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">SK</div>
+                <div>
+                  <div class="tc-name">Shay Kessler</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“The process was quick and respected my time. There was no unnecessary waiting, and
+                everything moved efficiently.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">MB</div>
+                <div>
+                  <div class="tc-name">Madelayne Bies</div>
+                  <div class="tc-role">Applicant</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“It gives a much better perspective on hiring. Candidates who complete the interview
+                are more serious, and I don’t waste time on people who aren’t.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">XR</div>
+                <div>
+                  <div class="tc-name">Xoey Rinkavage</div>
+                  <div class="tc-role">Manager</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="tc-text">“It makes it much easier to filter out people who are just applying without real
+                intent.”</p>
+              <div class="tc-author">
+                <div class="tc-avatar">SB</div>
+                <div>
+                  <div class="tc-name">Shelby</div>
+                  <div class="tc-role">Manager</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI CALCULATOR -->
+  <section class="roi" id="roi">
+    <div class="container">
+      <div class="roi-header">
+        <div class="section-label reveal">ROI Calculator</div>
+        <h2 class="section-title reveal stagger-1">See What You'll Save<br>with <em
+            style="color:var(--accent)">VOYSLY</em></h2>
+        <p class="section-sub reveal stagger-2">Enter your numbers and watch the savings stack up.</p>
+      </div>
+      <div class="roi-card reveal-scale">
+        <div class="roi-inputs">
+          <div class="roi-input-group">
+            <label>Monthly Hires</label>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <input type="range" class="roi-slider" id="roiHires" min="5" max="500" value="50" oninput="calcROI()">
+              <div class="roi-value-display" id="roiHiresVal">50</div>
+            </div>
+            <div class="roi-slider-vals"><span>5</span><span>500</span></div>
+          </div>
+          <div class="roi-input-group">
+            <label>Avg. Cost per Hire (Current)</label>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <input type="range" class="roi-slider" id="roiCost" min="500" max="10000" step="100" value="4000"
+                oninput="calcROI()">
+              <div class="roi-value-display" id="roiCostVal">$4,000</div>
+            </div>
+            <div class="roi-slider-vals"><span>$500</span><span>$10,000</span></div>
+          </div>
+          <div class="roi-input-group">
+            <label>Avg. Time to Fill (Days)</label>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <input type="range" class="roi-slider" id="roiDays" min="5" max="90" value="35" oninput="calcROI()">
+              <div class="roi-value-display" id="roiDaysVal">35</div>
+            </div>
+            <div class="roi-slider-vals"><span>5 days</span><span>90 days</span></div>
+          </div>
+        </div>
+        <div class="roi-results">
+          <div class="roi-result-item">
+            <div class="roi-result-label">Monthly Cost Savings</div>
+            <div class="roi-result-value" id="roiSavings">$108,000</div>
+          </div>
+          <div class="roi-result-item">
+            <div class="roi-result-label">Time Saved per Month</div>
+            <div class="roi-result-value" id="roiTimeSaved">420 hrs</div>
+          </div>
+          <div class="roi-result-item roi-result-highlight">
+            <div class="roi-result-label">Annual ROI</div>
+            <div class="roi-result-value" id="roiAnnual">$1.3M</div>
+          </div>
+        </div>
+      </div>
+      <div class="roi-cta reveal">
+        <a href="#" class="btn btn-primary" style="margin-top:24px;">Start your savings →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing-header">
+        <div class="section-label reveal">Pricing</div>
+        <h2 class="section-title reveal stagger-1">Simple, Transparent<br><em style="color:var(--accent)">Pricing</em>
+        </h2>
+        <p class="section-sub reveal stagger-2">Start free. Scale as you grow. No hidden fees, ever.</p>
+      </div>
+      <div class="pricing-toggle reveal">
+        <span class="toggle-label active" id="label-monthly">Monthly</span>
+        <button class="switch" id="billingSwitch" role="switch" aria-checked="false" aria-label="Toggle annual billing">
+          <span class="thumb"></span>
+        </button>
+        <span class="toggle-label" id="label-annual">Annual <span class="save">Save 20%</span></span>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal stagger-1">
+          <div class="pc-name">Navigator</div>
+          <div class="pc-desc">Get started on your terms</div>
+          <div class="pc-price">
+            <span class="pc-price-amount" data-monthly="99" data-annual="79">$99</span>
+            <span class="pc-price-period">/month</span>
+          </div>
+          <ul class="pc-features">
+            <li>Unlimited interviews</li>
+            <li>Resume analysis</li>
+            <li>Resume scoring</li>
+            <li>Basic analytics</li>
+            <li>Email automation</li>
+            <li>Up to 3 users</li>
+          </ul>
+          <a href="#" class="btn btn-secondary pc-btn">Start Free Trial</a>
+        </div>
+        <div class="pricing-card popular reveal stagger-2">
+          <div class="pricing-popular-badge">Most Popular</div>
+          <div class="pc-name">Partner</div>
+          <div class="pc-desc">Collaborate to screen smarter</div>
+          <div class="pc-price">
+            <span class="pc-price-amount" data-monthly="349" data-annual="279">$349</span>
+            <span class="pc-price-period">/month</span>
+          </div>
+          <ul class="pc-features">
+            <li>Unlimited interviews</li>
+            <li>Advanced analytics</li>
+            <li>ATS integrations</li>
+            <li>Custom branding</li>
+            <li>Up to 10 users</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-primary pc-btn">Start Free Trial →</a>
+        </div>
+        <div class="pricing-card reveal stagger-3">
+          <div class="pc-name">Concierge</div>
+          <div class="pc-desc">White-glove hiring support</div>
+          <div class="pc-price">
+            <span class="pc-price-amount">Custom</span>
+            <span class="pc-price-period"></span>
+          </div>
+          <ul class="pc-features">
+            <li>Includes everything in Partner, plus:</li>
+            <li>Unlimited users</li>
+            <li>Custom integrations</li>
+            <li>RBAC &amp; SSO</li>
+            <li>Dedicated support</li>
+
+          </ul>
+          <a href="#" class="btn btn-secondary pc-btn">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="blog-header">
+        <div>
+          <div class="section-label reveal">Blog & Resources</div>
+          <h2 class="section-title reveal stagger-1">Latest from VOYSLY</h2>
+        </div>
+        <a href="#" class="btn btn-secondary reveal" style="font-size:14px;padding:10px 24px;">View All Posts →</a>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card reveal stagger-1">
+          <div class="blog-thumb">🚀</div>
+          <div class="blog-body">
+            <div class="blog-tag">Sales & Productivity</div>
+            <div class="blog-title">Structured Hiring & Efficiency</div>
+            <div class="blog-excerpt">Learn how businesses are leveraging AI sales agents to qualify leads faster and
+              close deals with higher efficiency.</div>
+            <div class="blog-date">Jan 8, 2026 • 3 min read</div>
+          </div>
+        </div>
+        <div class="blog-card reveal stagger-2">
+          <div class="blog-thumb">⚙️</div>
+          <div class="blog-body">
+            <div class="blog-tag">Business Automation</div>
+            <div class="blog-title">Technology & AI in Recruiting</div>
+            <div class="blog-excerpt">Five essential automation workflows that every business should implement this year
+              to save time and reduce errors.</div>
+            <div class="blog-date">Jan 15, 2026 • 5 min read</div>
+          </div>
+        </div>
+        <div class="blog-card reveal stagger-3">
+          <div class="blog-thumb">🔌</div>
+          <div class="blog-body">
+            <div class="blog-tag">CRM & Integration</div>
+            <div class="blog-title">Hiring Pain Points & Solutions</div>
+            <div class="blog-excerpt">A step-by-step guide to connecting your AI agents with CRMs, marketing platforms,
+              and communication tools.</div>
+            <div class="blog-date">Jan 22, 2026 • 4 min read</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-header">
+        <div class="section-label reveal">FAQs</div>
+        <h2 class="section-title reveal stagger-1">Got Questions?</h2>
+        <p class="section-sub reveal stagger-2" style="margin:0 auto;">Everything you need to know about VOYSLY's AI
+          voice interviewing platform.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal stagger-1">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>What exactly does Voysly do?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Voysly orchestrates the early stages of hiring. It automates resume analysis,
+              candidate outreach, and structured screening, then delivers clean, consistent candidate evaluations to
+              your team. The busywork is handled.</div>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-2">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Does Voysly replace recruiters or HR teams?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. Voysly removes repetitive, front-end tasks so recruiters and HR teams can
+              focus on interviews, judgment, and culture fit. It strengthens your team’s role rather than replacing it.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-3">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Can Voysly align with our hiring process and standards?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes. Voysly operates within your existing standards, from screening criteria
+              to evaluation formats. The system reflects your workflow, not the other way around.</div>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-4">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>How does Voysly promote fairness in hiring?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Voysly applies consistent screening criteria across candidates, ensuring
+              everyone is evaluated against the same role-specific standards. Human judgment remains central throughout
+              the process.</div>
+          </div>
+        </div>
+        <div class="faq-item reveal stagger-5">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>How is candidate data protected?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Voysly is built with privacy-first architecture and enterprise-grade security.
+              Applicant data is encrypted, protected, and never shared without consent.</div>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>How are candidates screened?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Candidates complete a short, AI voice agent guided screening experience that
+              collects relevant skills, experience, and role-specific information. Responses are organized into
+              structured summaries for easy review.</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="text-align: center; margin-top: 48px;">
+        <a href="#" class="btn btn-secondary" style="font-size:14px; padding:12px 32px;">View More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <div class="cta-banner reveal"
+    style="margin-bottom:0; border-radius:0; background: var(--accent); padding: 80px 40px;">
+    <h3 style="color:#fff; font-size: clamp(2rem,3.5vw,2.8rem);">Ready to Transform Your Hiring?</h3>
+    <p style="color:rgba(255,255,255,0.75); font-size:17px;">Join the 500+ companies interviewing smarter with VOYSLY.
+    </p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="#" class="btn btn-dark" style="font-size:15px;">Start Free Trial</a>
+      <a href="#" class="btn"
+        style="background:rgba(255,255,255,0.15);color:#fff;border:1.5px solid rgba(255,255,255,0.3);font-size:15px;">Book
+        a Demo →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="/" class="footer-brand" aria-label="VOYSLY">
+          <img src="Voysly logo-02.png" alt="Voysly logo" class="nav-logo">
+        </a>
+        <ul class="footer-socials">
+          <li>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn">in</a>
+          </li>
+          <li>
+            <a href="#" class="footer-social-btn" aria-label="X">𝕏</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-grid">
+        <nav class="footer-grid-nav">
+          <ul class="footer-nav">
+            <li class="footer-nav-item"><a href="#workflow" class="footer-link">How it Works</a></li>
+            <li class="footer-nav-item"><a href="#pricing" class="footer-link">Pricing</a></li>
+            <li class="footer-nav-item"><a href="#faq" class="footer-link">FAQ</a></li>
+            <li class="footer-nav-item"><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-grid-legal">
+          <ul class="footer-legal">
+            <li class="footer-legal-item"><a href="#" class="footer-legal-link">Privacy Policy</a></li>
+            <li class="footer-legal-item"><a href="#" class="footer-legal-link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-grid-copy">
+          <div class="footer-copyright">
+            <div>&copy; 2026 VOYSLY Inc. All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CTA -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="#" class="btn btn-primary" onclick="scrollToTop()">↑</a>
+  </div>
+
+  <script>
+    // === HERO VIDEO ===
+    function playHeroVideo() {
+      const modal = document.getElementById('videoModalOverlay');
+      const video = document.getElementById('modalVideo');
+      if (!modal || !video) return;
+
+      modal.style.display = 'flex';
+      setTimeout(() => modal.classList.add('active'), 10);
+      video.play();
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('videoModalOverlay');
+      const video = document.getElementById('modalVideo');
+      if (!modal || !video) return;
+
+      modal.classList.remove('active');
+      setTimeout(() => {
+        modal.style.display = 'none';
+        video.pause();
+        video.currentTime = 0;
+      }, 400);
+    }
+
+    // === SCROLL REVEAL ===
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // === NAVBAR SCROLL ===
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      const floatingCta = document.getElementById('floatingCta');
+      const st = window.scrollY;
+      navbar.classList.toggle('scrolled', st > 60);
+      floatingCta.classList.toggle('visible', st > 600);
+      lastScroll = st;
+    });
+
+    // === WAVEFORM GENERATOR ===
+    function generateWaveform(containerId, barCount = 50) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+      for (let i = 0; i < barCount; i++) {
+        const bar = document.createElement('div');
+        bar.classList.add('ic-wave-bar');
+        const h = Math.random() * 38 + 6;
+        bar.style.height = h + 'px';
+        container.appendChild(bar);
+      }
+    }
+    generateWaveform('wave0');
+    generateWaveform('wave1');
+    generateWaveform('wave2');
+
+    // === INTERVIEW CARD ACTIVATION ===
+    function activateCard(card) {
+      document.querySelectorAll('.interview-card').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    }
+    let currentAudio = null;
+    let playingIndex = -1;
+
+    function togglePlay(index) {
+      const cards = document.querySelectorAll('.interview-card');
+      const card = cards[index];
+
+      // Audio Source Mapping (index 0 is our Barista)
+      const sources = ['barista.mp3', 'interpreter.mp3', 'warehouse.mp3'];
+      const source = sources[index];
+
+      // Reset other cards visual state if we switch cards
+      if (playingIndex !== -1 && playingIndex !== index) {
+        cards[playingIndex].classList.remove('playing');
+        if (currentAudio) {
+          currentAudio.pause();
+          currentAudio = null;
+        }
+      }
+
+      const isPlaying = card.classList.contains('playing');
+
+      if (isPlaying) {
+        // Pause current
+        card.classList.remove('playing');
+        if (currentAudio) currentAudio.pause();
+      } else {
+        // Play new or resume
+        cards.forEach(c => c.classList.remove('playing'));
+        card.classList.add('playing');
+        playingIndex = index;
+
+        if (!currentAudio || currentAudio.src.indexOf(source) === -1) {
+          currentAudio = new Audio(source);
+          currentAudio.addEventListener('ended', () => {
+            card.classList.remove('playing');
+          });
+
+          // Sync Wave Bars with Audio Progress
+          currentAudio.addEventListener('timeupdate', () => {
+            if (!currentAudio.duration) return;
+            const progress = currentAudio.currentTime / currentAudio.duration;
+            const bars = card.querySelectorAll('.ic-wave-bar');
+            const barsToHighlight = Math.floor(progress * bars.length);
+
+            bars.forEach((bar, i) => {
+              if (i <= barsToHighlight) {
+                bar.classList.add('played');
+                bar.style.background = 'var(--accent)';
+                bar.style.opacity = '1';
+              } else {
+                bar.classList.remove('played');
+                bar.style.background = 'rgba(10, 35, 66, 0.1)';
+                bar.style.opacity = '0.3';
+              }
+            });
+          });
+        }
+        currentAudio.play().catch(e => console.warn("Audio play failed:", e));
+      }
+    }
+
+    // === WORKFLOW SCROLL ANIMATION ===
+    const workflowSteps = document.querySelectorAll('.workflow-step');
+    const workflowLineFill = document.getElementById('workflowLineFill');
+    const workflowObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('active');
+          updateWorkflowLine();
+        }
+      });
+    }, { threshold: 0.5 });
+    workflowSteps.forEach(s => workflowObserver.observe(s));
+
+    function updateWorkflowLine() {
+      // Logic handled by .active classes on segments now
+    }
+
+    // === ROI CALCULATOR ===
+    function calcROI() {
+      const hires = parseInt(document.getElementById('roiHires').value);
+      const cost = parseInt(document.getElementById('roiCost').value);
+      const days = parseInt(document.getElementById('roiDays').value);
+
+      document.getElementById('roiHiresVal').textContent = hires;
+      document.getElementById('roiCostVal').textContent = '$' + cost.toLocaleString();
+      document.getElementById('roiDaysVal').textContent = days;
+
+      const savingsPerHire = cost * 0.54;
+      const monthlySavings = Math.round(savingsPerHire * hires);
+      const timeSaved = Math.round(hires * days * 0.24);
+      const annualROI = monthlySavings * 12;
+
+      document.getElementById('roiSavings').textContent = '$' + monthlySavings.toLocaleString();
+      document.getElementById('roiTimeSaved').textContent = timeSaved.toLocaleString() + ' hrs';
+      if (annualROI >= 1000000) {
+        document.getElementById('roiAnnual').textContent = '$' + (annualROI / 1000000).toFixed(1) + 'M';
+      } else {
+        document.getElementById('roiAnnual').textContent = '$' + annualROI.toLocaleString();
+      }
+    }
+    calcROI();
+
+    function updateNumberFlow(el, newPrice) {
+      if (!newPrice) return;
+      const value = newPrice.toString().toLowerCase();
+
+      // Handle "Custom" or non-numeric
+      if (value.includes('custom')) {
+        el.textContent = newPrice;
+        el.removeAttribute('data-numberflow');
+        return;
+      }
+
+      const numStr = value.replace(/[^0-9]/g, '');
+      const digits = numStr.split('');
+      if (digits.length === 0) return;
+
+      // Initialize structure if needed
+      if (!el.hasAttribute('data-numberflow')) {
+        el.style.display = 'inline-flex';
+        el.style.alignItems = 'baseline';
+        el.setAttribute('data-numberflow', 'true');
+        el.innerHTML = `<span class="number-flow-symbol" style="display:inline-block">$</span><span class="number-flow-container" style="display:inline-flex; overflow:hidden; height:1em; line-height:1; vertical-align:bottom;"></span>`;
+      }
+
+      const container = el.querySelector('.number-flow-container');
+
+      // Function to create a column (0-9)
+      const createCol = () => {
+        const col = document.createElement('span');
+        col.style.display = 'inline-flex';
+        col.style.flexDirection = 'column';
+        col.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+        col.style.willChange = 'transform';
+        for (let j = 0; j <= 9; j++) {
+          const char = document.createElement('span');
+          char.style.height = '1em';
+          char.style.display = 'flex';
+          char.style.alignItems = 'center';
+          char.style.justifyContent = 'center';
+          char.style.fontVariantNumeric = 'tabular-nums';
+          char.style.padding = '0 0.02em';
+          char.textContent = j;
+          col.appendChild(char);
+        }
+        return col;
+      };
+
+      // Sync columns from the left (magnitudes)
+      while (container.children.length < digits.length) {
+        container.insertBefore(createCol(), container.firstChild);
+      }
+      while (container.children.length > digits.length) {
+        container.removeChild(container.firstChild);
+      }
+
+      const columns = container.children;
+      container.offsetHeight; // Force reflow
+
+      // Animate individual digits
+      setTimeout(() => {
+        for (let i = 0; i < digits.length; i++) {
+          const d = parseInt(digits[i]);
+          if (!isNaN(d)) {
+            columns[i].style.transform = `translateY(-${d}em)`;
+          }
+        }
+      }, 50);
+    }
+
+    // === PRICING TOGGLE ===
+    const billingSwitch = document.getElementById('billingSwitch');
+    let isMonthly = true;
+
+    // Initialize NumberFlow for prices
+    document.querySelectorAll('.pc-price-amount').forEach(el => {
+      const monthly = el.getAttribute('data-monthly');
+      const initialValue = monthly || el.textContent;
+      updateNumberFlow(el, initialValue);
+    });
+
+    billingSwitch?.addEventListener('click', () => {
+      const goingAnnual = isMonthly;
+      isMonthly = !isMonthly;
+
+      // Update switch UI
+      billingSwitch.setAttribute('aria-checked', goingAnnual);
+
+      // Update labels
+      document.getElementById('label-monthly').classList.toggle('active', isMonthly);
+      document.getElementById('label-annual').classList.toggle('active', !isMonthly);
+
+      // Update prices
+      document.querySelectorAll('.pc-price-amount').forEach(el => {
+        const monthly = el.getAttribute('data-monthly');
+        const annual = el.getAttribute('data-annual');
+        if (!monthly || !annual) return;
+
+        const newPrice = isMonthly ? monthly : annual;
+        updateNumberFlow(el, newPrice);
+      });
+
+      // Confetti on annual
+      if (goingAnnual) {
+        launchConfetti(billingSwitch);
+      }
+    });
+
+    // === FAQ TOGGLE ===
+    function toggleFAQ(btn) {
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    }
+
+
+
+    // === PIPELINE NUMBER ANIMATION ===
+    function animateNumbers() {
+      document.querySelectorAll('.pipeline-stage-count').forEach(el => {
+        const target = parseFloat(el.textContent.replace(/,/g, ''));
+        let current = 0;
+        const duration = 40000; // 40 seconds total for an ultra-slow, high-end effect
+        const interval = 50;
+        const totalSteps = duration / interval;
+        const step = target / totalSteps;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          // Use Math.floor and toLocaleString for a clean whole-number display
+          el.textContent = Math.floor(current).toLocaleString();
+        }, interval);
+      });
+    }
+    const pipelineObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { animateNumbers(); pipelineObs.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+    const pipeline = document.querySelector('.e2e-pipeline');
+    if (pipeline) pipelineObs.observe(pipeline);
+
+    function launchConfetti(btn) {
+      const rect = btn.getBoundingClientRect();
+
+      confetti({
+        particleCount: 60,
+        spread: 70,
+        origin: {
+          x: (rect.left + rect.width / 2) / window.innerWidth,
+          y: (rect.top + rect.height / 2) / window.innerHeight
+        }
+      });
+    }
+    // === SMOOTH SCROLL FOR NAV LINKS ===
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // ===== POPOVER LOGIC =====
+    function openPopover(e) {
+      if (e) e.preventDefault();
+      document.getElementById('popoverOverlay').classList.add('active');
+      document.getElementById('popoverCard').classList.add('active');
+      // Reset state
+      document.getElementById('formContent').style.display = 'block';
+      document.getElementById('successUi').style.display = 'none';
+      document.getElementById('btnSpinner').style.display = 'none';
+      document.getElementById('btnText').textContent = 'Submit Form';
+    }
+
+    function closePopover() {
+      document.getElementById('popoverOverlay').classList.remove('active');
+      document.getElementById('popoverCard').classList.remove('active');
+    }
+
+    function handlePopoverSubmit(e) {
+      e.preventDefault();
+      const spinner = document.getElementById('btnSpinner');
+      const btnText = document.getElementById('btnText');
+
+      spinner.style.display = 'inline-block';
+      btnText.textContent = 'Submitting...';
+
+      setTimeout(() => {
+        document.getElementById('formContent').style.display = 'none';
+        document.getElementById('successUi').style.display = 'block';
+      }, 1500);
+    }
+
+    // Attach to all Learn More buttons
+    document.addEventListener('DOMContentLoaded', () => {
+      const allElements = document.querySelectorAll('a, button');
+      allElements.forEach(el => {
+        if (el.textContent.trim().includes('Learn More')) {
+          el.addEventListener('click', openPopover);
+          if (el.tagName === 'A') el.setAttribute('href', 'javascript:void(0)');
+        }
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- ===== POPOVER STRUCTURE ===== -->
+  <div class="popover-overlay" id="popoverOverlay" onclick="closePopover()"></div>
+  <div class="popover-card" id="popoverCard">
+    <button class="close-btn" onclick="closePopover()">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12"></path>
+      </svg>
+    </button>
+    <div id="formContent">
+      <div class="popover-header">
+        <span class="popover-badge">Contact Us</span>
+        <h3 class="popover-title">Let's Get In Touch</h3>
+        <p class="popover-subtitle">Get a personalized demo of how VOYSLY can transform your hiring efficiency.</p>
+      </div>
+      <form class="popover-body" onsubmit="handlePopoverSubmit(event)">
+        <div class="form-group">
+          <label>Full Name</label>
+          <div class="input-icon-wrap">
+            <svg class="icon" width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+            </svg>
+            <input type="text" placeholder="Enter your full name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <div class="input-icon-wrap">
+            <svg class="icon" width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            <input type="email" placeholder="Enter your email address" required>
+          </div>
+        </div>
+        <!-- NEW PHONE FIELD -->
+        <div class="form-group">
+          <label>Phone Number</label>
+          <div class="input-icon-wrap">
+            <svg class="icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <input type="tel" placeholder="Enter your number" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <div class="input-icon-wrap" style="border-radius: 12px; padding-left: 0;">
+            <textarea rows="3" placeholder="How can we help you?" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="popover-submit" id="submitBtn">
+          <span class="spinner" id="btnSpinner"></span>
+          <span id="btnText">Submit Form</span>
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Success Screen -->
+    <div class="success-ui" id="successUi">
+      <div class="success-icon">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M27.6 16C27.6 17.5234 27.3 19.0318 26.717 20.4392C26.1341 21.8465 25.2796 23.1253 24.2025 24.2025C23.1253 25.2796 21.8465 26.1341 20.4392 26.717C19.0318 27.3 17.5234 27.6 16 27.6C14.4767 27.6 12.9683 27.3 11.5609 26.717C10.1535 26.1341 8.87475 25.2796 7.79759 24.2025C6.72043 23.1253 5.86598 21.8465 5.28302 20.4392C4.70007 19.0318 4.40002 17.5234 4.40002 16C4.40002 12.9235 5.62216 9.97301 7.79759 7.79759C9.97301 5.62216 12.9235 4.40002 16 4.40002C19.0765 4.40002 22.027 5.62216 24.2025 7.79759C26.3779 9.97301 27.6 12.9235 27.6 16Z"
+            fill="currentColor" fill-opacity="0.16" />
+          <path
+            d="M12.1334 16.9667L15.0334 19.8667L19.8667 13.1M27.6 16C27.6 17.5234 27.3 19.0318 26.717 20.4392C26.1341 21.8465 25.2796 23.1253 24.2025 24.2025C23.1253 25.2796 21.8465 26.1341 20.4392 26.717C19.0318 27.3 17.5234 27.6 16 27.6C14.4767 27.6 12.9683 27.3 11.5609 26.717C10.1535 26.1341 8.87475 25.2796 7.79759 24.2025C6.72043 23.1253 5.86598 21.8465 5.28302 20.4392C4.70007 19.0318 4.40002 17.5234 4.40002 16C4.40002 12.9235 5.62216 9.97301 7.79759 7.79759C9.97301 5.62216 12.9235 4.40002 16 4.40002C19.0765 4.40002 22.027 5.62216 24.2025 7.79759C26.3779 9.97301 27.6 12.9235 27.6 16Z"
+            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <h3 class="success-title">Success</h3>
+      <p class="success-desc">Thank you for your submission. Our team will reach out to you shortly.</p>
+    </div>
+  </div>
+  <!-- ===== VIDEO MODAL STRUCTURE ===== -->
+  <div class="video-modal-overlay" id="videoModalOverlay" onclick="closeVideoModal()">
+    <div class="video-modal-content" onclick="event.stopPropagation()">
+      <button class="video-modal-close" onclick="closeVideoModal()">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M18 6L6 18M6 6l12 12"></path>
+        </svg>
+      </button>
+      <video id="modalVideo" src="VOYSLY Ad video Draft_02 (1).mp4" poster="thumbnail.png" controls
+        style="width:100%; height:100%; object-fit:contain;"></video>
+    </div>
+  </div>
+</body>
+
+</html>
