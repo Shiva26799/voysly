@@ -1289,7 +1289,15 @@
 
       // Reset other cards visual state if we switch cards
       if (playingIndex !== -1 && playingIndex !== index) {
-        cards[playingIndex].classList.remove('playing');
+        const prevCard = cards[playingIndex];
+        prevCard.classList.remove('playing');
+        
+        // NEW: Restore original duration if hidden in a data attribute
+        const prevDuration = prevCard.querySelector('.ic-duration');
+        if (prevDuration.hasAttribute('data-original')) {
+          prevDuration.textContent = prevDuration.getAttribute('data-original');
+        }
+
         if (currentAudio) {
           currentAudio.pause();
           currentAudio = null;
@@ -1302,6 +1310,9 @@
         // Pause current
         card.classList.remove('playing');
         if (currentAudio) currentAudio.pause();
+        
+        // NEW: Optional - keep countdown where it is, or reset? 
+        // Let's keep it paused at the current value.
       } else {
         // Play new or resume
         cards.forEach(c => c.classList.remove('playing'));
@@ -1312,11 +1323,29 @@
           currentAudio = new Audio(source);
           currentAudio.addEventListener('ended', () => {
             card.classList.remove('playing');
+            // NEW: Reset duration text
+            const durationEl = card.querySelector('.ic-duration');
+            if (durationEl.hasAttribute('data-original')) {
+              durationEl.textContent = durationEl.getAttribute('data-original');
+            }
           });
 
-          // Sync Wave Bars with Audio Progress
+          // Sync Wave Bars with Audio Progress + Countdown
           currentAudio.addEventListener('timeupdate', () => {
             if (!currentAudio.duration) return;
+            
+            const durationEl = card.querySelector('.ic-duration');
+            // Store original duration once
+            if (!durationEl.hasAttribute('data-original')) {
+              durationEl.setAttribute('data-original', durationEl.textContent);
+            }
+
+            // Calculate remaining time
+            const remaining = Math.max(0, currentAudio.duration - currentAudio.currentTime);
+            const m = Math.floor(remaining / 60);
+            const s = Math.floor(remaining % 60);
+            durationEl.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+
             const progress = currentAudio.currentTime / currentAudio.duration;
             const bars = card.querySelectorAll('.ic-wave-bar');
             const barsToHighlight = Math.floor(progress * bars.length);
