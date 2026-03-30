@@ -18,8 +18,8 @@
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#" class="nav-logo"><img src="Voysly logo-02.png" alt="Voysly logo"
-          style="height:42px; width:auto; display:block; transform: scale(1.50);"></a>
+      <a href="#" class="nav-logo"><img src="new_voysly.png" alt="Voysly logo"
+          style="height:42px; width:auto; display:block; transform: scale(1.20);"></a>
       <ul class="nav-links">
         <li><a href="#experience">Experience</a></li>
         <li><a href="#features">Features</a></li>
@@ -259,7 +259,7 @@
           </div>
           <div class="ws-visual">
             <div class="ws-visual-inner">
-              <div class="ws-visual-icon"><img src="job-setup.png" alt="Job Setup"></div>
+              <div class="ws-visual-icon"><img src="Voysly1.jpeg" alt="Configure Interview"></div>
             </div>
           </div>
         </div>
@@ -272,7 +272,7 @@
           </div>
           <div class="ws-visual">
             <div class="ws-visual-inner">
-              <div class="ws-visual-icon"><img src="auto-invite.png" alt="Auto-Invite"></div>
+              <div class="ws-visual-icon"><img src="Voysly2.jpeg" alt="Invite Candidates"></div>
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@
           </div>
           <div class="ws-visual">
             <div class="ws-visual-inner">
-              <div class="ws-visual-icon"><img src="shortlist.png" alt="Shortlist"></div>
+              <div class="ws-visual-icon"><img src="review-hire.png" alt="Review and Hire"></div>
             </div>
           </div>
         </div>
@@ -1718,6 +1718,38 @@
         style="width:100%; height:100%; object-fit:cover;"></video>
     </div>
   </div>
+  <!-- 3D TILT EFFECT FOR WORKFLOW SECTION -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.ws-visual');
+      const tiltEffect = (e, card) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const percentX = (x - centerX) / centerX;
+        const percentY = (y - centerY) / centerY;
+
+        // Tilt amount: max 10 degrees
+        const rotateX = -percentY * 10;
+        const rotateY = percentX * 10;
+
+        card.style.transform = `scale(1.05) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        card.style.setProperty('--x', `${x}px`);
+        card.style.setProperty('--y', `${y}px`);
+      };
+
+      const resetTilt = (card) => {
+        card.style.transform = 'scale(1) rotateX(0) rotateY(0)';
+      };
+
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => tiltEffect(e, card));
+        card.addEventListener('mouseleave', () => resetTilt(card));
+      });
+    });
+  </script>
 </body>
 
 </html>

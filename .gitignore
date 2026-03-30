@@ -1,0 +1,29 @@
+# IDE and System Files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Archives and Packages
+node_modules/
+*.zip
+*.rar
+*.7z
+
+# Temporary Project Assets
+Voysly Logo (1) (1)/
+Voysly1.jpeg
+Voysly2.jpeg
+config-interview.png
+invite-candidates.png
+review-hire.png
+
+# Media (usually too large for Git)
+*.mp4
+*.mov
+
+# Environment Files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
